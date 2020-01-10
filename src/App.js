@@ -21,6 +21,7 @@ export default function App() {
       if (data.message) {
         setError(data.message)
         setUserData('');
+        setUserRepos('')
       } else {
         setUserRepos(data)
         setUserData(data[0].owner);
