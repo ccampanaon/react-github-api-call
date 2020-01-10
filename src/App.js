@@ -28,6 +28,10 @@ export default function App() {
         setError('');       
       }      
     })
+    .catch((error) => {
+      setError(error)
+      setUserData('');
+    });
   }
 
   return (
